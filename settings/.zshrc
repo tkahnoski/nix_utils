@@ -1,4 +1,6 @@
 
+#use chsh to change default shell 
+
 #Shell Options
 HISTSIZE=1000000
 SAVEHIST=1000000
@@ -11,8 +13,8 @@ setopt histverify
 
 setopt correct
 
-PS1='%n@%m:%(4~|%-1~/../%2~|%3~)%# '
-RPS1="%(?..(%B%?%)) %D{%L:%M}"
+PS1='%n %1~/ '
+RPS1="%(?..(%B%?%)) %h %D{%L:%M} %(?..%b)"
 
 #env
 export PROJECTS_HOME=/Users/tkahnoski/projects
